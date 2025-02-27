@@ -20,13 +20,12 @@ body{
     margin-bottom: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-.header .header-img{
-    position: absolute;
-    left: 0;
-}
 .header .nav-bar{
     position: absolute;
     right: 0;
+}
+.nav-bar ul:first-child{
+    margin-right:auto;
 }
 .nav-bar .nav-link{
     margin-right: 16px;
