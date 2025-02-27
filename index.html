@@ -3,81 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LandingPage</title>
+    <title>exercice</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header" id="header">
-        <nav class="nav-bar" id="nav-bar">
-            <ul>
-                <a>PYTHON</a>
-                <a href="#author" class="nav-link hide">About</a>
-                <a href="#form" class="nav-link hide">Contact</a>
-                <a href="#pricing" class="nav-link hide">Pricing</a>
-            </ul>
-        </nav>
+    <header>
+      <h1>Alan Turin</h1>
+      <p>The Father of Modern Computing</p>
+      <p class="bilal">By <span>Bilal Belhaj</span></p>
     </header>
-    <main>
-        <div class="started">
-            <h1>Welcome to <span class="python">Python</span> beginners Course</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ex beatae explicabo rerum amet quaerat minima illo iusto repudiandae eligendi veritatis distinctio quo molestiae molestias nulla, doloribus sint unde modi?</p>
-            <form action="#" id="form">
-                <input type="email" name="email" id="email" placeholder="you@gmail.com">
-                <input type="submit" value="Get Started" class="submit" id="submit">
-            </form>
+    <main class="container">
+        <figure class="section imag-section">
+            <img id="image" src="https://www.cryptomuseum.com/people/turing/img/turing_2s.jpg" alt="Alan Turing">
+            <figcaption id="img-caption">"Sometimes it is the people no one can imagine anything of who do the things no one can imagine"-Alan Turing</figcaption>
+        </figure>
+        <div class="section">
+            <h2>Biography</h2>
+             <p id="tribute-info">Alan Mathison Turing was born on June 23, 1912, in london, England. He was a mathematician, logician, cryptanalyst, and computer scientist whose groundbreaking work laid the foundations for modern computing and artificial intelligence. <br> From a young age, turing demonstrated a naturale aptitude for mathematics and science. He attended King's College, Cambridge, where he excelled academically and became a fellow in 1935. <br> Turing was not just brilliant academic but also a visionary who foresaw the potential of computers long before anyone else.</p>
         </div>
-        <div class="section to-learn">
-            <h2>What you learn in this course</h2>
-            <ul>
-                <li>Introduction To python</li>
-                <li>Install python and code editor</li>
-                <li>Python basics</li>
-                <li>functions and loops</li>
-                <li>OOP with python</li>
-                <li>build awsome real world projects</li>
-                <li>Explore web development with python</li>
-            </ul>
+        <div class="section">
+            <h2>World War II and the Enigma Machine</h2>
+            <p>During World War II, Turing was recruited to work at Bletchley Park, teh British government's top-secret codebreaking center. <br>His most significant contribution was developing techniques to break the German Enigma machine, which encrypted military communications. <br>By 1941, Turing and his team had cracked Enigma, saving countless lives and shortening the war by several years.</p>
+        </div>
+        <div class="section">
+            <h2>The Turing Machine</h2>
+            <p>
+                In 1936, Turing introduced the concept of a theoretical computing device,now known as the "Turing Machine" This idea formed the foundation of computer science, demonstrating that a machine could compute anything that is computable, given enough time and resources. This concept is considered the basis of theoretical computer science.
+            </p>
+        </div>
+        <div class="section">
+            <h2>The Turing Test and Artificial Intelligence</h2>
+            <p>
+                In 1950, Turing published a landmark paper titled "Computing Machinery and intelligence" where he proposed what is now known as the <strong>Turing Test</strong>. <br> This test determines whether a machine can exhibit behavior indistinguishable from a human. <br> it remains a fundamental  concept in the field of <strong>Artificial Intelligence</strong>, inspiring generations of researchers to develop machines that can "think"
+            </p>
+        </div>  
+        <div class="section">
+            <h2>Timeline of Major Events</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>1912</h3>
+                    <p>Born on june 23rd in London, England</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1931</h3>
+                    <p>Began studies at king's College,Cambridge</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1936</h3>
+                    <p>Published "On Computable Numbers" introducing the Turing Machine</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1939</h3>
+                    <p>Joined Bletchley Park to work on breaking the Enigma code</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1941</h3>
+                    <p>Cracked the Enigma code, helping to turn the tide of WWII</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1945</h3>
+                    <p>Awarded on OBE (Order of the British Empire) for his wartime services</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1950</h3>
+                    <p>Proposed the Turing Test for artificial intelligence</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1952</h3>
+                    <p>Prosecuted for bieng homosexual, leading to chemical castration</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1954</h3>
+                    <p>Tragically died at age 41,with his death officially ruled as suicide</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Legacy</h2>
+            <p>Alan Turing contributions to computer science, cryptography, and artificial intelligence were revolutionary.Although he faced tremendous personal struggles,his work has shaped the world as we know it today <br>His vision of computing has evolved into the powerful machines we rely on daily, from smartphones to supercomputers. <br> His pioneering ideas continue to influence AI research and inspire new technologies. <br> Alan Turing remains a symbol of briliance and resilience, showing how one person's vision can change the course of history. <br></p>
+            <a href="#" class="button" target="_blank">Learn More</a>
         </div>
     </main>
-    <div class="more-info">
-        <div class="author" id="author">
-            <h3>why this course?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolores maiores perspiciatis beatae culpa exercitationem quas quaerat, similique corporis officia mollitia consectetur ipsa totam ratione quis incidunt, veniam laudantium sint?</p>
-        </div>
-    </div>
-    <div id="pricing" class="pricing">
-        <div id="dataanalytics" class="price">
-            <h3>Python for Data Analytics</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-            <p class="price-part">349$</p>
-            <p class="actual">171.99$ <span class="discounte">-51%</span></p>
-            <button>Enrol</button>
-        </div>
-        <div id="webe " class="price">
-            <h3>Python for web development</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-            <p class="price-part">200$</p>
-            <p class="actual">98.99$ <span class="discounte">-51%</span></p>
-            <button>Enrol</button>
-        </div>
-        <div id="automation" class="price">
-            <h3>Python for task automation</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p class="price-part">279$</p>
-            <p class="actual">136.71$ <span class="discounte">-51%</span></p>
-            <button>Enrol</button>
-        </div>
-    </div>
-    <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-
-        }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-        }
-    </script>
+    <footer>
+        <p>&copy; 2024 Tribute to Alan Turing | Created by BILAL BELHAJ</p>
+        <p>Inspired by the work of Alan Turing, The father of modern computing.</p>
+        <p>
+            <ul>
+                <li><a href="#" class="social-link" target="_blank">Facebook</a></li>
+                <li><a href="#" class="social-link" target="_blank">Githup</a></li>
+                <li><a href="#" class="social-link" target="_blank">Protfolio</a></li>
+            </ul>
+        </p>
+    </footer>
 </body>
 </html>
