@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <img src="#" class="header-img" id="header-img">
+        <nav class="nav-bar" id="nav-bar">
+            <ul>
+                <a href="#author" class="nav-link hide">About</a>
+                <a href="#form" class="nav-link hide">Contact</a>
+                <a href="#pricing" class="nav-link hide">Pricing</a>
+                <a class="nav-link menu" onclick=showSidebar()>KK</a>
+            </ul>
+            <ul class="sidebar">
+                <a class="nav-link menu" onclick=hideSidebar()>c</a>
+                <a href="#author" class="nav-link">About</a>
+                <a href="#form" class="nav-link">Contact</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="started">
+            <h1>Welcome to <span class="python">Python</span> beginners Course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ex beatae explicabo rerum amet quaerat minima illo iusto repudiandae eligendi veritatis distinctio quo molestiae molestias nulla, doloribus sint unde modi?</p>
+            <form action="#" id="form">
+                <input type="email" name="email" id="email" placeholder="you@gmail.com">
+                <input type="submit" value="Get Started" class="submit" id="submit">
+            </form>
+        </div>
+        <div class="section to-learn">
+            <h2>What you learn in this course</h2>
+            <ul>
+                <li>Introduction To python</li>
+                <li>Install python and code editor</li>
+                <li>Python basics</li>
+                <li>functions and loops</li>
+                <li>OOP with python</li>
+                <li>build awsome real world projects</li>
+                <li>Explore web development with python</li>
+            </ul>
+        </div>
+    </main>
+    <div class="more-info">
+        <div class="author" id="author">
+            <h3>why this course?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolores maiores perspiciatis beatae culpa exercitationem quas quaerat, similique corporis officia mollitia consectetur ipsa totam ratione quis incidunt, veniam laudantium sint?</p>
+        </div>
+        <div class="author" id="author">
+            <h3>whatch this video</h3>
+            <video src=""></video>
+            
+        </div>
+    </div>
+    <div id="pricing" class="pricing">
+        <div id="dataanalytics" class="price">
+            <h3>Python for Data Analytics</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <p class="price-part">349$</p>
+            <p class="actual">171.99$ <span class="discounte">-51%</span></p>
+            <button>Enrol</button>
+        </div>
+        <div id="webe " class="price">
+            <h3>Python for web development</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <p class="price-part">200$</p>
+            <p class="actual">98.99$ <span class="discounte">-51%</span></p>
+            <button>Enrol</button>
+        </div>
+        <div id="automation" class="price">
+            <h3>Python for task automation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="price-part">279$</p>
+            <p class="actual">136.71$ <span class="discounte">-51%</span></p>
+            <button>Enrol</button>
+        </div>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
